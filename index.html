@@ -1,0 +1,26 @@
+---
+layout: default
+title: Changer devlog
+author: Changer
+keywords: nodejs, mongodb, backbone.js, javascript, developer, blog, angular.js, .net, python, django
+summary: Writings about javascript, node.js, mongodb, backbone.js, python, .net and everything else in the world.
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="post">
+      <h1>
+        <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+      </h1>
+      <span class="date">
+        On&nbsp;
+        {{ post.date | date_to_string }}
+        &nbsp;by&nbsp;
+      </span>
+      <a href="{{ post.authorLink }}" class="author-link">{{ post.author }}</a>
+      <p>
+        {{ post.content | strip_html | truncatewords: 125 }}
+      </p>
+    </div>
+  {% endfor %}
+</div>
