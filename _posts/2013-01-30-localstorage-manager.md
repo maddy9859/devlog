@@ -1,10 +1,10 @@
 ---
 layout: post
 categories: [javascript, localstorage]
-title: localStorage manager (lm.js)
+title: localStorage manager (lm.js) A simple wrapper around localStorage with which you can store
 keywords: javascript, localStorage
 summary: localStorage manager (lm.js) - A simple wrapper around `localStorage` with which you can store, query and perform CRUD operations on collections and documents.
-authorLink: /madhums
+authorLink: http://madhums.me
 author: Madhusudhan Srinivasa
 ---
 
@@ -117,7 +117,3 @@ You can see the test results [here](http://madhums.me/public/lm.js/)
 
 Localstorage has a limitation of 5MB, so if you want to use offline data storage with files etc, [indexedDB](http://hacks.mozilla.org/2012/02/storing-images-and-files-in-indexeddb/) would be a good option.
 
----
-### Resources:
-
-* [lm.js on github](https://github.com/madhums/lm.js)

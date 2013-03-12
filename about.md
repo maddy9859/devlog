@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Changer developers
-permalink: /about/
+title: Changer geeks
+permalink: /geekness/
 ---
 
-Brag about the developers and the awesome designers!
