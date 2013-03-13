@@ -1,0 +1,43 @@
+<br><br><br><br>
+<h2>Recent posts</h2>
+
+{% for post in site.posts %}
+  <div class="recent">
+    <p>
+      <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+      <br>
+      <span class="muted">{{ post.date | date_to_string }}</span>
+    </p>
+  </div>
+{% endfor %}
+
+<h2>About Changer</h2>
+<p>We build Web and mobile apps. We are a team of passionate geeks. We love solving problems and providing better solutions using stacks like django, node.js, asp.net. We are specialized in building apps with best User Experience.</p>
+<p>
+  <a href="http://www.changer.nl/portfolio.html">see our work</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="http://www.changer.nl/team.html">meet the team</a>
+</p>
+
+<h2>Our products</h2>
+<ul class="products-sidebar">
+  <li class="jipio">
+    <a href="http://www.changer.nl/products.html#jip-io">Jip.io</a>
+    <p>Jip.io is a platform for friendly transactions. Share the best you have with the people you choose.</p>
+  </li>
+  <li class="citycardz">
+    <a href="http://www.changer.nl/products.html#citycardz">Citycardz</a>
+  </li>
+  <li class="socialschools">
+    <a href="http://www.changer.nl/products.html#socialschools">Social Schools</a>
+  </li>
+  <li class="chimp">
+    <a href="http://www.changer.nl/products.html#incidentportal">Incident Portal</a>
+  </li>
+  <li class="getsurveyapp">
+    <a href="http://www.changer.nl/products.html#getsurveyapp">Getsurveyapp</a>
+  </li>
+  <li class="audittool">
+    <a href="http://www.changer.nl/products.html#audittool">Audit tool</a>
+  </li>
+</ul>

@@ -319,7 +319,33 @@ ul.submenu li a:hover {
   text-decoration: none;
 }
 
+ul.products-sidebar {
+  margin: 0;
+  padding: 0;
+}
 
+ul.products-sidebar li {
+  list-style-type: none;
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+
+ul.products-sidebar li a {
+  font-size: 18px;
+}
+
+ul.products-sidebar li p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+ul.products-sidebar li.jipio {
+  background: url('/public/images/jipiologo.png') no-repeat;
+}
+
+.recent .muted {
+  font-size: 12px;
+}
 
 /*
 ================================================
