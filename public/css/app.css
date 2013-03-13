@@ -343,6 +343,18 @@ ul.products-sidebar li.jipio {
   background: url('/public/images/jipiologo.png') no-repeat;
 }
 
+ul.products-sidebar li.citycardz {
+  background: url('/public/images/city-cardzlogo.png') no-repeat;
+}
+
+ul.products-sidebar li.getsurveyapp {
+  background: url('/public/images/gsalogo.png') no-repeat;
+}
+
+ul.products-sidebar li.chimp {
+  background: url('/public/images/chimplogo.png') no-repeat;
+}
+
 .recent .muted {
   font-size: 12px;
 }
