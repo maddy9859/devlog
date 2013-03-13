@@ -355,6 +355,15 @@ ul.products-sidebar li.chimp {
   background: url('/public/images/chimplogo.png') no-repeat;
 }
 
+ul.products-sidebar li.audittool {
+  background: url('/public/images/audittoollogo.png') no-repeat;
+}
+
+ul.products-sidebar li.socialschools {
+  background: url('/public/images/socialschoolslogo.png') no-repeat;
+}
+
+
 .recent .muted {
   font-size: 12px;
 }
