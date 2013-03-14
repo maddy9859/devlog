@@ -6,14 +6,14 @@ layout: default
 <br>
 <div class="post">
   <br>
+  <p class="right date">
+    {{ page.date | date_to_string }} by <a href="{{page.authorLink}}">{{page.author}}</a>
+  </p>
   {{ content }}
   <hr />
   <div class="left">
     <a href="https://twitter.com/share" class="twitter-share-button" data-via="changertech" data-size="large">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </div>
-  <div class="right date">
-    {{ page.date | date_to_string }}
   </div>
 </div>
 

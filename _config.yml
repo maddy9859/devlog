@@ -5,3 +5,5 @@ redcarpet:
   extensions: ["fenced_code_blocks", "autolink", "strikethrough", "superscript", "lax_html_blocks", "hard_wrap", "tables", "xhtml"]
 safe: false
 lsi: false
+baseurl: /devlog/
+nonbaseurl: /devlog

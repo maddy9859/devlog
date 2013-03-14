@@ -31,7 +31,7 @@ a:hover{
 }
 
 hr{
-  border-top: 1px dashed #ffffff;
+  border-top: 1px dashed #aaa;
   border-bottom: none;
 }
 
@@ -447,7 +447,22 @@ section.about, section.products, section.contact {
   color: #ffffff;
 }
 
+.notfound {
+  text-align: center;
+  margin-top: 80px;
+  color: #999;
+}
 
+.notfound p {
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.notfound h1 {
+  color: #222;
+  font-size: 50px;
+  font-weight: 400;
+}
 
 /*
 ================================================
