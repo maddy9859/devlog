@@ -2,6 +2,22 @@
 
 Blog for developers
 
+
+## Installation
+
+Install jekyll and other gems using
+
+```sh
+$ gem install jekyll
+$ ...
+```
+
+## Setup
+
+```sh
+$ make setup
+```
+
 ## Usage
 
 Start the server
@@ -37,12 +53,3 @@ $ make deploy
 ```
 
 Fork it and follow markdown or github style of documenting your stuff. Send PL's
-
-## Installation
-
-Install jekyll and other gems using
-
-```sh
-$ gem install jekyll
-$ ...
-```
