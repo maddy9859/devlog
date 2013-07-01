@@ -43,4 +43,8 @@ Other styling guides out there:
 4. [idiomatic.js](https://github.com/rwldrn/idiomatic.js#readme)
 5. [Felix's node.js style guide](http://nodeguide.com/style.html)
 
+An image
+
+<img src="https://f.cloud.github.com/assets/60566/697596/323436a8-dd03-11e2-839e-3befb7a7ca48.png" />
+
 When I am developing on the server side (node.js) I don't use semicolons, otherwise on the client side I mostly do.
