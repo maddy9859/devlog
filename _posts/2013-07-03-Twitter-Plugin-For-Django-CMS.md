@@ -34,4 +34,4 @@ This is from Twitter developers blog.
 > Embedded timelines are not subject to traditional Twitter API rate limits, and are designed to scale with your site as your traffic and audience grows.
 
 
-The plugin is also added in the Django CMS Official add-ons site. [Link Page](https://www.django-cms.org/en/add-ons/?page=3)
+The plugin is also added in the Django CMS Official add-ons site. Here is the [link](https://www.django-cms.org/en/add-ons/?page=3)
