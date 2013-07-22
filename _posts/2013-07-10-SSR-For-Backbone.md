@@ -27,6 +27,12 @@ to route each request that comes in and feed the response with the rendered HTML
 See the code below, annotated with some comments. You'll have to do quite some changes to make it work
 for your own scenario!
 
+I've also set up a small example project which shows the code in use:
+
+[https://github.com/rubenstolk/backbone-ssr](https://github.com/rubenstolk/backbone-ssr)
+
+Good luck!
+
 ```js
 
 // this should ideally be done through some configuration...
