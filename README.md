@@ -21,12 +21,10 @@ Blog for developers
   `author` is your github username
 
 3. Please make sure you explain the following
-
   * What you are trying to do?
   * Why you are trying to do?
   * How are you trying to do?
   * Advantages (if any)
   * Disadvantages (if any)
   * Resources and References
-
 4. Submit pull request
