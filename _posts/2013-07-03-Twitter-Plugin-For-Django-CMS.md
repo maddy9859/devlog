@@ -7,26 +7,31 @@ summary: javascript styling guide I follow for node.js. Other style guide refere
 author: vinitcool76
 ---
 
-Last week, we came across an issue. Twitter removed support for v1.0 of its REST API. As a result, all of the sites using django CMS's twitter plugin broke.This was a problem because we also used it in some of our sites. Since there was no fix available at that time, I decided to create a new plugin on the latest API. 
+Last week, We came across an issue that Twitter removed support for v1.0 of its REST API. As a result, all sites using Django CMS twitter plugin had no longer access to the twitter stream.It was a problem because we used it in couple of our sites. Since there was no fix available at that time, we decided to come up with a new plugin.
 
 ### Design
 
-Twitter has a new option of generating widgets for your profile. These run as iframes injected in your site and it is quite customizable. There were a lot of field that could be manipulated by the user. So i take a look at those fields and decided to use those fields as options and choices in model of my plugin. So all user needed to do was to specify his username, widget-id, background-color and size of the plugin and it was injected in the placeholder where he wished it to be.
 
-### Advantages
+Twitter has an option to generate timeline widgets for user's profile which run as iframes. These widgets are customizable and have some fields which could be be used to modify look and feel of the widget.
 
-It works out of box and you don't have to get into setting up an app and dealing with access tokens and as a result server side flow. Twitter also has promised a good support with scaling as well. This means you can just set it up and forget.
+So, we decided to use these fields in plugin's model. 
 
-In order to use this plugin:
+You could browse the code in our repo [here](https://github.com/changer/cmsplugin-twitter).
+
+In order to use this plugin, do:
 
 ```
 $ pip install cmsplugin-twitter
+$ python manage.py syncdb
+$ python manage.py migrate
 ```
+Once installed, you need to fill out username, widget-id, height, width in the plugin form and save it. It will just work.
 
-Then you might want to do a syncdb and migrate your database. Once done with that just insert the plugin in your desired place in the template and it will just work.
+### Benefits
 
-You might wanaa check this out in actions. Here it is on one of our sites. 
 
-*Also the plugin has been added in the Django CMS Official addons list. Here is the Addon [Link Page](https://www.django-cms.org/en/add-ons/?page=3)*
+This is from Twitter developers blog. 
+> Embedded timelines are not subject to traditional Twitter API rate limits, and are designed to scale with your site as your traffic and audience grows.
 
-<img src="http://i.imgur.com/0hVltHs.png">
+
+This plugin is also added in the Django CMS Official add-ons site. Here is the [link](https://www.django-cms.org/en/add-ons/?page=3)
