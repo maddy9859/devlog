@@ -9,7 +9,7 @@ author: rubenstolk
 
 *The following is work in progress, especially because of performance issues.*
 
-# Usage
+## Usage
 
 Should you have a full single-page app using Backbone.js (or possibly other javascript framework) and
 you use require.js, this helps to easily make your page server-rendered, taking into account the URL et
@@ -20,20 +20,20 @@ not be able to interpret the content in the same way it was meant to be.
 
 *As we use Node + Express.js, the following is a middleware for Express.js*
 
-# Benefits and concerns
+## Benefits and concerns
 
 This mechanism is especially useful if you have an app that does everything on the client, especially templating.
 
 Because of the *current performance cost*, I would suggest to only load the app on the server when serving
 to Google/Facebook etc, e.g. only when necessary.
 
-# Working
+## Working
 
 The idea is very simple, use jsdom to load the HTML on the client, start the javascript-app and fetch the
 resulted HTML, serve this to the client. We create one app-window and keep it in memory, then use that app
 to route each request that comes in and feed the response with the rendered HTML.
 
-# Example
+## Example
 
 See the code below, annotated with some comments. You'll have to do quite some changes to make it work
 for your own scenario!
@@ -41,12 +41,11 @@ for your own scenario!
 I've also set up a small example project which shows the code in use:
 [https://github.com/rubenstolk/backbone-ssr](https://github.com/rubenstolk/backbone-ssr)
 
-# Todo
+## Todo
 
 To make the application generic, more research is needed in how it can fit in as a generic framework and also
 solutions need to be made to improve performance and let it compete with other mechanisms.
 
-*Good luck!*
 
 ```js
 
