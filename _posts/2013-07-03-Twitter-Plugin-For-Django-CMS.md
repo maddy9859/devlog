@@ -3,11 +3,11 @@ layout: post
 categories: [javascript, code-style]
 title: Twitter Plugin for Django CMS
 keywords: twitter, python, Django
-summary: javascript styling guide I follow for node.js. Other style guide references
+summary: about the twitter plugin for django cms
 author: vinitcool76
 ---
 
-Last week, We came across an issue that Twitter removed support for v1.0 of its REST API. As a result, all sites using Django CMS twitter plugin had no longer access to the twitter stream.It was a problem because we used it in couple of our sites. Since there was no fix available at that time, we decided to come up with a new plugin.
+Last week, We came across an issue that Twitter removed support for v1.0 of its REST API. As a result, all sites using Django CMS twitter plugin had no longer access to the twitter stream. It was a problem because we used it in couple of our sites. Since there was no fix available at that time, we decided to come up with a new plugin.
 
 ## Design
 
