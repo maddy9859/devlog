@@ -7,22 +7,17 @@ summary: Don't repeat urself while writing CSS Code
 author: vinitkumar
 ---
 
-* What you are trying to do?
 
 Trying to write LESS in Chrome DevTools. Currently DevTools provies
 offiially support live editing for CSS and SASS. But using the hack
 described below you can live edit LESS on your browser and it will
 conveniently compile to CSS in real time.
 
- * Why you are trying to do?
-
 This is needed because when you use DevTools to live edit some css and
 your codebase is in LESS, you need to write first in CSS in your
 DevTools and again you need to rewrite it in LESS(abiet in slightly
 different syntax). It woul be much better if you could just live edit
 LESS and your tooling takes care of its compilation and minification.  
-
-* How are you trying to do?
 
 It is quite easy to do. The latest versions of Chrome and Chrome Canary
 comes with the concept of workspaces. This means you can add your
@@ -41,7 +36,8 @@ First of all setup package.json and gruntfile.js file for your projects.
 
 Here are sample package.json and gruntfile.js files for easy reference:
 
-gruntfile.js
+###gruntfile.js:
+
 ```js
 module.exports = function(grunt) {
 
@@ -68,7 +64,8 @@ module.exports = function(grunt) {
 };
 
 ```
-package.json:
+###package.json:
+
 ```js
 {
   "name": "less-to-css",
