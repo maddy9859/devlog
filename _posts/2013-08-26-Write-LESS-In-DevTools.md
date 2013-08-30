@@ -7,36 +7,28 @@ summary: Don't repeat urself while writing CSS Code
 author: vinitkumar
 ---
 
+At Changer, we almost always use LESS to write CSS code. Usually, our
+workflow comprises of these three steps:
 
-Trying to write LESS in Chrome DevTools. Currently DevTools provies
-offiially support live editing for CSS and SASS. But using the hack
-described below you can live edit LESS on your browser and it will
-conveniently compile to CSS in real time.
+- Use Devtools to debug the CSS.
+- Write the code in LESS during development.
+- Compiles LESS to CSS at the final stage before deploying or pushing to the repo.
 
-This is needed because when you use DevTools to live edit some css and
-your codebase is in LESS, you need to write first in CSS in your
-DevTools and again you need to rewrite it in LESS(abiet in slightly
-different syntax). It woul be much better if you could just live edit
-LESS and your tooling takes care of its compilation and minification.  
+It is possible to write LESS in Chrome DevTools. Currently,DevTools provies
+built-in support for live editing CSS and SASS. But it is perfectly possible to write LESS in it as well.
 
-It is quite easy to do. The latest versions of Chrome and Chrome Canary
-comes with the concept of workspaces. This means you can add your
-directory of code to DevTools and it would have write access to the
-code. Using this very concept, combined with some Grunt hackery, it is
-very much possible to write LESS directly in Chrome DevTools.
+Lets see how it to configure DevTools to do it:
 
-The setup requires some configuration:
+The latest versions of Chrome and Chrome Canary
+comes with the concept of workspaces. It means you can add your project directory to DevTools and it would have write access to the
+code.So whatever changes you do in the browser persists in the code.
 
-- You need to know how to use grunt and some basics of node and npm.
-- A Gruntfile needs to be added to the existing project directory. 
-- A package.json file is also required to get the necassary npm modules.
-- Moderate understanding of Chrome DevTools.
+- Add the project directory to Workspace.
+- Install Nodejs, NPM and grunt if you don't have them already.
+- Modify the package.json and gruntfile.js in order to work for your project.
 
-First of all setup package.json and gruntfile.js file for your projects.
 
-Here are sample package.json and gruntfile.js files for easy reference:
-
-###gruntfile.js:
+`gruntfile.js`:
 
 ```js
 module.exports = function(grunt) {
@@ -64,7 +56,9 @@ module.exports = function(grunt) {
 };
 
 ```
-###package.json:
+
+`package.json`:
+
 
 ```js
 {
@@ -82,31 +76,22 @@ module.exports = function(grunt) {
 }
 
 ```
-Then, Add your current project directory to Workspace in your devtools.
-Then click on the Sources tab of your devtools, you will see all the
-files in your project when you HIT `CMD+O`. Now, return to your shell
-and run `grunt watch`. This will trigger a watch on the changes in your
-less and will compile your less into CSS each time you write and save
-your LESS file.
 
-* Advantages (if any)
+- Once done with this setup, run `$grunt watch` in the project and start editing the LESS code in browser.  
+
+### Advantages:
 
 This is helpful because:
 
-- You don't need to write CSS to test in your browser and write in LESS
-  in your project. You will now write LESS once and for all. 
-- You don't need to compile and/or minify your LESS code each time you
-  are done making changes. Grunt will be doing it in realtime for you.
+- It is not needed to write CSS to test in browser and then write in LESS
+  in your project. 
 - It saves you a lot of time and helps you write better CSS code (in
   LESS).
 
-* Resources and References
+### Resources and References
 
-If you don't follow all the tooling already, you should go through these
-links:
-
-Chrome DevTools: https://developers.google.com/chrome-developer-tools/
-Using Grunt: http://gruntjs.com/getting-started
-NPM Basic tutorial: http://dreamerslab.com/blog/en/npm-basic-commands/
+- Chrome DevTools: https://developers.google.com/chrome-developer-tools/
+- Using Grunt: http://gruntjs.com/getting-started
+- NPM Basic tutorial: http://dreamerslab.com/blog/en/npm-basic-commands/
 
 
