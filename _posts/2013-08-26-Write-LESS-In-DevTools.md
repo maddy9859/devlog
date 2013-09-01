@@ -72,8 +72,12 @@ module.exports = function(grunt) {
 }
 
 ```
+After saving these files, run `npm install` to get the dependencies and
+grunt plugins.
 
-- Once done with this setup, run `$grunt watch` in the project directory and start editing the LESS code in browser.  
+### Usage
+
+Once done with this setup, run `$grunt watch` in the project directory and start editing the LESS code in browser.  
 
 ### Advantages:
 
