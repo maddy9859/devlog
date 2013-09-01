@@ -77,6 +77,15 @@ module.exports = function(grunt) {
 After saving these files, run `npm install` to get the dependencies and
 grunt plugins.
 
+Here are some screenshots of this workflow:
+
+- Adding the project to workspace.
+![workspace]('/public/images/workspace.png')
+- Editing the LESS code in the source tab of DevTools.
+![LESS]('/public/images/less.png')
+- The LESS code gets compiled to CSS everytime the file is saved.
+![CSS]('/public/images/less.png')
+
 ### Usage
 
 Once done with this setup, run `$grunt watch` in the project directory and start editing the LESS code in browser.  
