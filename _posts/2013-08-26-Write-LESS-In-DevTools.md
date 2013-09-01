@@ -7,26 +7,22 @@ summary: Don't repeat urself while writing CSS Code
 author: vinitkumar
 ---
 
-At Changer, we almost always use LESS to write CSS code. Usually, our
+At Changer, we always use LESS to write the stylesheets. Our
 workflow comprises of these three steps:
 
-- Use Devtools to debug the CSS.
-- Write the code in LESS during development.
-- Compiles LESS to CSS at the final stage before deploying or pushing to the repo.
+- Debug CSS in Chrome Devtools as per the design.
+- Then write it again in LESS in the project.
+- Finally compile LESS to CSS for use in production.
 
-It is possible to write LESS in Chrome DevTools. Currently,DevTools provies
-built-in support for live editing CSS and SASS. But it is perfectly possible to write LESS in it as well.
+Well, It is possible to avoid these three steps and write LESS directly in Chrome DevTools. Currently,DevTools provies built-in support for live editing CSS and SASS.
 
-Lets see how it to configure DevTools to do it:
-
-The latest versions of Chrome and Chrome Canary
-comes with the concept of workspaces. It means you can add your project directory to DevTools and it would have write access to the
-code.So whatever changes you do in the browser persists in the code.
+The latest versions of Chrome and Chrome Canary have the feature of Workspace. It means you can add your project directory to DevTools and it would have write access to your project. So whatever changes you do in the browser gets saved in the project directory.
 
 - Add the project directory to Workspace.
 - Install Nodejs, NPM and grunt if you don't have them already.
 - Modify the package.json and gruntfile.js in order to work for your project.
 
+You will require these two files to get this setup working:
 
 `gruntfile.js`:
 
@@ -77,15 +73,15 @@ module.exports = function(grunt) {
 
 ```
 
-- Once done with this setup, run `$grunt watch` in the project and start editing the LESS code in browser.  
+- Once done with this setup, run `$grunt watch` in the project directory and start editing the LESS code in browser.  
 
 ### Advantages:
 
-This is helpful because:
+This is a great addition to your workflow because:
 
-- It is not needed to write CSS to test in browser and then write in LESS
-  in your project. 
-- It saves you a lot of time and helps you write better CSS code (in
+- It automatically converts your LESS to CSS and you could also minify
+  them for production usage at the time of saving the file. 
+- It saves a lot of time and helps you write better CSS code (in
   LESS).
 
 ### Resources and References
