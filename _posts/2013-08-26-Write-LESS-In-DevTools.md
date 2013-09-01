@@ -80,11 +80,11 @@ grunt plugins.
 Here are some screenshots of this workflow:
 
 - Adding the project to workspace.
-![workspace]('/public/images/workspace.png')
+![workspace](/public/images/workspace.png)
 - Editing the LESS code in the source tab of DevTools.
-![LESS]('/public/images/less.png')
+![LESS](/public/images/less.png)
 - The LESS code gets compiled to CSS everytime the file is saved.
-![CSS]('/public/images/less.png')
+![CSS](/public/images/less.png)
 
 ### Usage
 
