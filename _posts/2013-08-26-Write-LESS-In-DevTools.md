@@ -7,22 +7,24 @@ summary: Don't repeat urself while writing CSS Code
 author: vinitkumar
 ---
 
-At Changer, we always use LESS to write the stylesheets. Our
+At Changer, we always use LESS to write stylesheets. Our
 workflow comprises of these three steps:
 
 - Debug CSS in Chrome Devtools as per the design.
-- Then write it again in LESS in the project.
-- Finally compile LESS to CSS for use in production.
+- Then write it in  LESS in the code editor(say Sublime).
+- Finally, compile LESS to CSS for use in production.
 
 Well, It is possible to avoid these three steps and write LESS directly in Chrome DevTools. Currently,DevTools provies built-in support for live editing CSS and SASS.
 
-The latest versions of Chrome and Chrome Canary have the feature of Workspace. It means you can add your project directory to DevTools and it would have write access to your project. So whatever changes you do in the browser gets saved in the project directory.
+The latest versions of Chrome and Chrome Canary have the feature of Workspace. It means browser's DevTools can get the write access to the project directory. So any changes done to the file gets saved.
+
+### Installation
 
 - Add the project directory to Workspace.
-- Install Nodejs, NPM and grunt if you don't have them already.
-- Modify the package.json and gruntfile.js in order to work for your project.
+- Install Node, NPM and Grunt.
+- Modify package.json and gruntfile.js in order to work with the project.
 
-You will require these two files to get this setup working:
+It will require these two files to work:
 
 `gruntfile.js`:
 
@@ -83,9 +85,9 @@ Once done with this setup, run `$grunt watch` in the project directory and start
 
 This is a great addition to your workflow because:
 
-- It automatically converts your LESS to CSS and you could also minify
+- It automatically converts LESS to CSS and could also minify
   them for production usage at the time of saving the file. 
-- It saves a lot of time and helps you write better CSS code (in
+- It saves a lot of time and help write better CSS code (in
   LESS).
 
 ### Resources and References
