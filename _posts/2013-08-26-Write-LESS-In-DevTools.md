@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [LESS, CSS, Chrome DevTools]
-title: Write And Edit Less In Chrome DevTools
+title: How To Write And Edit LESS In Chrome DevTools
 keywords: Less, Chrome, DevTools, CSS, Grunt
 summary: Don't repeat urself while writing CSS Code
 author: vinitkumar
@@ -90,7 +90,7 @@ The LESS code gets compiled to CSS everytime the file is saved.
 
 ### Usage
 
-Once done with this setup, run `$grunt watch` in the project directory and start editing the LESS code in browser.  
+Once done with this setup, run `$ grunt watch` in the project directory and start editing the LESS code in browser.  
 
 ### Advantages:
 
