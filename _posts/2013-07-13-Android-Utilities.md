@@ -16,7 +16,7 @@ Feel free to use, copy or contribute to our work.
 Getting started to use the library
 =============
 
-**Step 1**: Download the zip file of this project and unzip it.
+**Step 1**: Fork / Clone the repo or download the zip file of this project and unzip it.
 
 **Step 2**: Import the project into your eclipse Android development enviornment. 
 
@@ -25,7 +25,7 @@ http://help.eclipse.org/helios/index.jsp?topic=%2Forg.eclipse.platform.doc.user%
 
 **Step 3**: Link this library project with your project from Properties -> Android -> Library -> Add
 
-If you are not familiar with this, here you have to link the project imported in Step 1 with your own application.
+If you are not familiar with this, here you have to link the project imported in Step 2 with your own application.
 You can follow the link below to understand how you link a particular project with this library project.
 http://www.vogella.com/articles/AndroidLibraryProjects/article.html#tutorial_library_usage
 
@@ -69,7 +69,6 @@ Helper methods available in the library
     
     // Get the device screen density multiplier
     float densityMultiplier = getDensityMultiplier(context);
-    
     
     // Show Yes/No confirmation dialog
     showConfirmDialog( context, message, yesListener, noListener );
@@ -124,9 +123,38 @@ Helper methods available in the library
     
     // Get elapsed time from ISO formatted time
     String elapsedTime = getElapsedTime( ISOTime );
-    
-    
-    
-    
   
+```
+
+**NetworkManager.java**
+
+```java
+
+    // Read the input stream to bytes
+    byte[] bytes = readStreamToBytes(inputStream);
+    
+    // Read input stream
+    String str = readStream( inputStream ); 
+    
+    // Make a HTTP GET request
+    executeHttpGet( httpURLConnection );
+    
+    // Make a HTTP GET request with standard Content-Type header
+    executeHttpGet( httpURLConnection, mimeType );
+
+    // Make a HTTP POST request
+    executeHttpPost( httpURLConnection );
+    
+    // Make a HTTP GET request with standard Content-Type header
+    executeHttpPost( httpURLConnection, mimeType );
+    
+    // Make a HTTP PUT request
+    executeHttpPut( httpURLConnection );
+    
+    // Make a HTTP PUT request with standard Content-Type header
+    executeHttpPut( httpURLConnection, mimeType )
+    
+    
+    
+    
 ```
