@@ -38,26 +38,16 @@ Helper methods available in the library
 
 **Utils.java**
 
+```java
+
     // Show a toast message in the UI
-```java
-
     Toast toast = showToast( activityContext, msgToShow );
-    
-```
-
-    // Check availablility of internet connection on the device.
-```java
   
+    // Check availablility of internet connection on the device.
     boolean isAvailable = isInternetAvailable(context);
-```
-
+  
     // Check if the SD card on the device is mounted
-```java
-
     boolean isMounted = isSDCARDMounted();
-```
-
-```java
     
     // Show an alert dialog with the OK button.
     showAlertDialog(context, msgTitle, msgBody);
@@ -67,6 +57,30 @@ Helper methods available in the library
     
     // Convert a drawable to a Bitmap
     Bitmap bitmap = drawableToBitmap( Drawable drawable );
+    
+    // Convert the given bitmap to InputStream
+    InputStream is = bitmapToInputStream(bitmap);
+    
+    // Read input stream
+    String str = readStream( inputStream );
+
+    // Scale down bitmap by height
+    Bitmap bmp = scaleDownBitmap( context, bitmap, newHeight );
+    
+    // Get the device screen density multiplier
+    float densityMultiplier = getDensityMultiplier(context);
+    
+    
+    // Show Yes/No confirmation dialog
+    showConfirmDialog( context, message, yesListener, noListener );
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
