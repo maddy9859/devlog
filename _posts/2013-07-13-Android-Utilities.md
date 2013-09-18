@@ -32,3 +32,13 @@ http://www.vogella.com/articles/AndroidLibraryProjects/article.html#tutorial_lib
 And there you are good to go with the project.
 
 ----
+
+Helper method available in the library
+=============
+
+```js
+
+  // Check availablility of internet connection on the device.
+  Toast toast = showToast( activityContext, msgToShow );
+
+```
