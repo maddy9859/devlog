@@ -154,7 +154,4 @@ Helper methods available in the library
     // Make a HTTP PUT request with standard Content-Type header
     executeHttpPut( httpURLConnection, mimeType )
     
-    
-    
-    
 ```
