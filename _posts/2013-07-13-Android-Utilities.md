@@ -74,13 +74,56 @@ Helper methods available in the library
     // Show Yes/No confirmation dialog
     showConfirmDialog( context, message, yesListener, noListener );
     
+    // Get application version number
+    String appVersion = getApplicationVersionNumber( context );
     
+    // Get application version code
+    int appVersion = getApplicationVersionCode( context );
     
+    // Get OS version
+    String osVersion = getOSVersion();
     
+    // Check if the service with the given name is running
+    boolean isRunning = isServiceRunning( context, serviceName );
     
+    // Get the IMEI of the device
+    String imeiStr = getDeviceImei( context );
     
+    // Show a social sharing modal in the application
+    share( context, sharingMsg, emailSubject, title );
     
+    // Get internet connection type
+    int type = getDataConnectionType( context );
+  
+    // Check if the entered email id is valid
+    boolean isValid = isValidEmail( email );
+  
+    // Capitalize the string
+    String allCaps = capitalizeString( String string )
     
+    // Set the backgroud drawable for a view
+    setBackground(view, drawable);
+    
+    // Check if the database with a given name is present on the device
+    boolean isPresent = isDatabasePresent( packageName, DBName );
+    
+    // Convert JSONArray to ArrayList<String>
+    ArrayList<String> list = toStringArray( jsonArr );
+    
+    // Convert ArrayList<String> to JSONArray
+    JSONArray arr = toJSONArray(stringArr);
+    
+    // Write an image onto the device or SD Card and get the path
+    String filePath = writeImage( imageData );
+    
+    // Get the name of the current application
+    String appName = getApplicationName();
+    
+    // Convert ISO String to Calendar
+    Calendar cal = toCalendar( iso8601string );
+    
+    // Get elapsed time from ISO formatted time
+    String elapsedTime = getElapsedTime( ISOTime );
     
     
     
