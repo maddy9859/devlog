@@ -33,12 +33,33 @@ And there you are good to go with the project.
 
 ----
 
-Helper method available in the library
+Helper methods available in the library
 =============
+
+**Utils.java**
 
 ```java
 
-  // Check availablility of internet connection on the device.
-  Toast toast = showToast( activityContext, msgToShow );
-
+    // Show a toast message in the UI
+    Toast toast = showToast( activityContext, msgToShow );
+  
+    // Check availablility of internet connection on the device.
+    boolean isAvailable = isInternetAvailable(context);
+  
+    // Check if the SD card on the device is mounted
+    boolean isMounted = isSDCARDMounted();
+    
+    // Show an alert dialog with the OK button.
+    showAlertDialog(context, msgTitle, msgBody);
+    
+    // Convert an image to Base64 string
+    String base64Image = toBase64(bitmap);
+    
+    // Convert a drawable to a Bitmap
+    Bitmap bitmap = drawableToBitmap( Drawable drawable );
+    
+    
+    
+    
+  
 ```
