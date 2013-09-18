@@ -38,16 +38,26 @@ Helper methods available in the library
 
 **Utils.java**
 
+    // Show a toast message in the UI
 ```java
 
-    // Show a toast message in the UI
     Toast toast = showToast( activityContext, msgToShow );
-  
+    
+```
+
     // Check availablility of internet connection on the device.
-    boolean isAvailable = isInternetAvailable(context);
+```java
   
+    boolean isAvailable = isInternetAvailable(context);
+```
+
     // Check if the SD card on the device is mounted
+```java
+
     boolean isMounted = isSDCARDMounted();
+```
+
+```java
     
     // Show an alert dialog with the OK button.
     showAlertDialog(context, msgTitle, msgBody);
