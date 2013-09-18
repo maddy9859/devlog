@@ -36,7 +36,7 @@ And there you are good to go with the project.
 Helper method available in the library
 =============
 
-```js
+```java
 
   // Check availablility of internet connection on the device.
   Toast toast = showToast( activityContext, msgToShow );
