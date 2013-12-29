@@ -149,7 +149,7 @@ Reduced your CSS by roughly 35%!
 Done, without errors.
 ```
  
-Voila and both of the above mentioned problems are solved and you have a
+Voila, both of the above mentioned problems are solved and you have a
 smaller css file and snappier website.
 
 For contributing to the project, you could always go to the Github repo
