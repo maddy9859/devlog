@@ -11,16 +11,17 @@ At Changer, we are very passionate about our products and toolings.
 Naturally we spend quite some time optimizing our apps
 and tools. If you have done performance Audits for your App/Websites in Chrome
 Devtools or similar applications you must have noticed it always
-complains about the usused CSS rules.
+complains about the unused CSS rules.
 
 Well this is annoying because of two reasons: 
+
 - It consumes your bandwidth during network transfer and delays the
 rendering of the webpage.
 - There isn't much tooling available to solve this issue and with more use
 of CSS frameworks like Bootstrap/Foundation this problem just
 multiplies.
 
-In order to solve that Issue, Ruben started working on a Grunt task
+In order to solve that Issue, [Ruben](http://github.com/rubenstolk) started working on a Grunt task
 runner that basically takes your css file, crawl up your webpage url and
 then filter the css rules that are present in that webpage.It uses
 phantomjs to simulate the browsers interaction. In short, it produces
