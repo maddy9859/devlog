@@ -3,7 +3,7 @@ layout: post
 categories: [LESS, CSS, Chrome DevTools]
 title: Grunt-cssrazor, How It Helped Us create Leaner CSS Files.
 keywords: grunt, css, tools.
-summary: Grunt taskrunner to cleanup unused css from your html
+summary: Produces cleaned CSS based on actually used DOM
 author: vinitkumar
 ---
 
@@ -23,7 +23,8 @@ multiplies.
 In order to solve that Issue, Ruben started working on a Grunt task
 runner that basically takes your css file, crawl up your webpage url and
 then filter the css rules that are present in that webpage.It uses
-phantomjs to simulate the browsers interaction.
+phantomjs to simulate the browsers interaction. In short, it produces
+cleaned CSS based on actually used DOM.
 
 For those of you who aren't aware about grunt, [Grunt](http://gruntjs.com/) is essentially a node based
 taskrunner similar to Makefiles, plus you get
