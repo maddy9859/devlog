@@ -1,18 +1,18 @@
 ---
 layout: post
 categories: [LESS, CSS, Chrome DevTools]
-title: Grunt-cssrazor, How It Helped Us Remove unused CSS.
+title: Grunt-cssrazor, How It Helped Us create Leaner CSS Files.
 keywords: grunt, css, tools.
 summary: Grunt taskrunner to cleanup unused css from your html
 author: vinitkumar
 ---
 
-At Changer, we are very passionate about our products and toolings we
-use to create them.
+At Changer, we are very passionate about our products and toolings.
 Naturally we spend quite some time optimizing our apps
 and tools. If you have done performance Audits for your App/Websites in Chrome
 Devtools or similar applications you must have noticed it always
 complains about the usused CSS rules.
+
 Well this is annoying because of two reasons: 
 - It consumes your bandwidth during network transfer and delays the
 rendering of the webpage.
@@ -136,7 +136,7 @@ After saving the file, run `grunt cssrazor`.
 This would give you file name as 'release.css' or whatever you set in
 the gruntfile.js.
 
-Also, you would get a measure of how much leaner the generated css
+Also, you would get a measure of how much thinner your new generated css
 file is. It would look something like this.
 
 ```bash
