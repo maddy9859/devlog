@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [LESS, CSS, Chrome DevTools]
-title: Grunt-cssrazor, How It Helped Us create Leaner CSS Files.
+title: Grunt-cssrazor, How It Helped Us Create Leaner CSS Files.
 keywords: grunt, css, tools.
 summary: Produces cleaned CSS based on actually used DOM
 author: vinitkumar
