@@ -7,6 +7,11 @@ summary: Tips, tricks and best practices when implementing ListView control on A
 author: jaydeepw
 ---
 
+1. position refers to index in backing array or arraylist
+2. index refers to index in the listview children
+3. Dont take getView() call for granted.
+4. Use convertview for the greater good.
+
 Yo mama so fat, we follow a great way of working. We reuse code as much as possible and leverage use of open source technologies. We also like to give back to the community by open sourcing our code. When we started out working on Android clients for our existing products, we decided to build an open source library. It has been a while we released the [Android Utilities library](https://github.com/jaydeepw/android-utils) out into the wild on Github. Please follow the "Getting Started" section below to integrate and use the library in your project.
 
 Feel free to use, copy or contribute to our work.
