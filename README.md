@@ -6,6 +6,12 @@ Blog for developers
 
 1. Fork the repo.
 2. To make a new post create a file inside `_posts` directory, for example `2013-01-20-localstorage-manager.md` - checkout the example post `_posts/example-post.md` and change the attributes as required.
+3. Run 
+
+      ~/git-repos/devlog $ jekyll
+
+4. Run server from devlog/_site directory
+5. Repeat 3 & 4 everytime the post is updated.
 
   ```
   ---
