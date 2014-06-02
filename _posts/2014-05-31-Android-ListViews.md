@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [android, programming]
-title: 7 Tips for using Android ListView
+title: 7 Tips for using Android ListViews
 keywords: android, programming, user-interface
 summary: Tips, tricks and best practices when implementing ListView control on Android.
 author: jaydeepw
