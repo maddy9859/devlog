@@ -27,4 +27,11 @@ Blog for developers
   * Advantages (if any)
   * Disadvantages (if any)
   * Resources and References
+5. To server it locally, run:
+    gem install jekyll
+    jekyll serve --auto
+
+The site should be available at
+http://localhost:4000/devlog
+
 4. Submit pull request
