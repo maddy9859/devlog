@@ -38,7 +38,7 @@ Fortunately, all recent versions of Mac OS X (since OS X 10.7 Lion) ship with Ru
 
      `$ pod setup`
 
-   *This process will likely take a while as this command clones the CocoaPods Specs repository into  **~/.cocoapods/**  on your computer.*
+   *This process will likely take a while as this command clones the CocoaPods Specs repository into ~/.cocoapods/ on your computer.*
 
 
 
@@ -72,18 +72,17 @@ To do so, enter this command:
 
 
   
-      source 'https://github.com/CocoaPods/Specs.git' 
-      platform :ios, '8.0'
+        source 'https://github.com/CocoaPods/Specs.git' 
+        platform :ios, '8.0'
 
-       pod 'AFNetworking', '~> 2.4.1'
-       pod 'ARAnalytics', '~> 2.7' 
+        pod 'AFNetworking', '~> 2.4.1'
+        pod 'ARAnalytics', '~> 2.7' 
 
 
   This tells CocoaPods that your project is targeting iOS 8.
 Also, you want to include AFNetworking version 2.4.1 (the latest as of the writing of this tutorial) and ARAnalytics version 2.7 as a dependency for your project
 
-    ***Save and close the Podfile.*
-**
+    ***Save and close the Podfile.***
 
     **NOTE:** You can [search for pods](#search-for-pods) also if you wish.
 
@@ -109,7 +108,7 @@ Also, you want to include AFNetworking version 2.4.1 (the latest as of the writi
 
 - Now you can import and use the dependencies e.g.:
   
-      #import <Reachability/Reachability.h>
+        #import <Reachability/Reachability.h>
     
 **Thats all!**
 
